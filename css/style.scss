@@ -1,0 +1,55 @@
+@import "nullstyle.scss";
+
+body {
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgb(183, 166, 255);
+}
+.calc {
+   background: #000;
+   border-radius: 15px;
+   overflow: hidden;
+   font-size: 25px;
+   box-shadow: 5px 5px 15px rgb(0, 0, 0);
+   &__display {
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      padding: 20px;
+   }
+   &__out {
+      font-size: 30px;
+      color: #fff;
+      user-select: none;
+   }
+   &__buttons {
+      background: #191919;
+      padding: 10px;
+   }
+}
+.row {
+   display: flex;
+   &__btn {
+      background: #191919;
+      width: 70px;
+      height: 70px;
+      flex: 1 1 25%;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 70px;
+      margin: 3px;
+      cursor: pointer;
+      user-select: none;
+      transition: 0.1s;
+      &:active {
+         box-shadow: 0 0 5px rgb(52, 122, 122);
+      }
+   }
+}
+.btn-green {
+   color: rgb(52, 122, 122);
+}
