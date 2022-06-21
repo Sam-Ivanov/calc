@@ -6,8 +6,11 @@ body {
    justify-content: center;
    align-items: center;
    background: rgb(183, 166, 255);
+   // min-width: 402px;
+   overflow: hidden;
 }
 .calc {
+   flex: 0 0 324px;
    background: #000;
    border-radius: 15px;
    overflow: hidden;
@@ -42,11 +45,15 @@ body {
       text-align: center;
       line-height: 70px;
       margin: 3px;
-      cursor: pointer;
+      // cursor: pointer;
       user-select: none;
       transition: 0.1s;
-      &:active {
+      &:hover {
          box-shadow: 0 0 5px rgb(52, 122, 122);
+         background: rgba(52, 122, 122, 0.1);
+      }
+      &:active {
+         box-shadow: 0 0 5px rgb(247, 247, 247);
       }
    }
 }

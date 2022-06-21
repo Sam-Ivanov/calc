@@ -85,9 +85,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background: #b7a6ff;
+  overflow: hidden;
 }
 
 .calc {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 324px;
+          flex: 0 0 324px;
   background: #000;
   border-radius: 15px;
   overflow: hidden;
@@ -142,7 +146,6 @@ body {
   text-align: center;
   line-height: 70px;
   margin: 3px;
-  cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -151,9 +154,15 @@ body {
   transition: 0.1s;
 }
 
-.row__btn:active {
+.row__btn:hover {
   -webkit-box-shadow: 0 0 5px #347a7a;
           box-shadow: 0 0 5px #347a7a;
+  background: rgba(52, 122, 122, 0.1);
+}
+
+.row__btn:active {
+  -webkit-box-shadow: 0 0 5px #f7f7f7;
+          box-shadow: 0 0 5px #f7f7f7;
 }
 
 .btn-green {
